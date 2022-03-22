@@ -1,7 +1,7 @@
 
 .product-container{
     width: 300px;
-    height:512px !important;
+    height:512px;
     border: 1px solid #95A0A7;
    box-sizing: border-box;
    border-radius: 8px;
