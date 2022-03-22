@@ -5,6 +5,7 @@
     border: 1px solid #95A0A7;
    box-sizing: border-box;
    border-radius: 8px;
+   position: relative;
  }
 .product-container img{
     width: 280px;
@@ -30,8 +31,19 @@ font-weight: 400;
 font-size: 17px;
 }
  .button-cart{
+     position: absolute;
      width:100%;
      background: #FFE0B3;
-     margin-bottom:5px;
-
+     border: 1px solid #95A0A7;
+     box-sizing: border-box;
+     border-radius: 0px 0px 8px 8px;
+    left: 0%;
+    right: 0%;
+    top: 90.75%;
+    bottom: -0.2%;
+    transition:1.1s;
+    cursor: pointer;
+ }
+ .button-cart:hover{
+     background-color:orange;
  }
