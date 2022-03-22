@@ -1,0 +1,22 @@
+.header-nav{
+ background-color: #1C2B35;
+ height:80px;
+ display:flex;
+ align-items: center;
+ justify-content:space-between;
+ padding-left: 140px;
+ padding-right:140px
+ 
+}
+.nav-img{
+    cursor: pointer;
+}
+.header-nav a{
+    text-decoration: none;
+    color: #fff;
+    margin-left:34px;
+    font-size:17px;
+}
+.header-nav a:hover{
+    color:#FF9900;
+}
