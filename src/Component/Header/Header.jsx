@@ -4,7 +4,7 @@ import Shop from '../Shop/Shop';
 import './Header.css'
 const Header = () => {
     return (
-        <div>
+        <div className="main-header">
           <nav className="header-nav">
           <img className="nav-img" src={logo} alt="" />
         <div className="">
