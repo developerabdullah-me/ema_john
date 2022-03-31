@@ -16,7 +16,7 @@ const Header = () => {
         </div>
           </nav>
           
-          <Shop></Shop>
+          {/* <Shop></Shop> */}
         </div>
     );
 };
