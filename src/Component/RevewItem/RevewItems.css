@@ -1,0 +1,18 @@
+.review-container{
+    width:571px;
+    border: 1px solid #95A0A7;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px;
+}
+.review{
+    display:flex;
+}
+.review img{
+    width: 91px;
+    height: 91px;
+    border-radius: 10px;
+}
