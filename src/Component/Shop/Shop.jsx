@@ -9,6 +9,8 @@ function Shop() {
    const [products,]=useProducts();
     const [cart,setCart]=useState([])
     const [pageCount, setPageCount] = useState(0);
+    const [page, setPage] = useState(0);
+    const [pageSize, setPageSize] = useState(10);
 
      //  pagination
      useEffect( () =>{
@@ -75,10 +77,16 @@ let newCart =[];
               {
                         [...Array(pageCount).keys()]
                         .map(number => <button
-                            // className={page=== number ? 'selected': ''}
-                            // onClick={() => setPage(number)}
+                          className={page=== number ? 'selected': ''}
+                          onClick={() => setPage(number)}
                         >{number + 1}</button>)
+                        
                     }
+                    <select>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                        </select>
               </div>
             </div>
             <div className="order-Summary">
