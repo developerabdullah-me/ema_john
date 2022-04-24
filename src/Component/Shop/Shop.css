@@ -16,6 +16,11 @@
     top: 0;
     
 }
+.pagination{
+    
+     text-align: center;
+    padding:5px;
+}
 @media screen and(max-width:1100px) {
     .Products{
         display:grid;

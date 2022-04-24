@@ -11,9 +11,9 @@ const Order = () => {
     const [cart,setcart]=useCart(products)
 const navigate=useNavigate();
     const handelToDeleteCart=(product)=>{
-        const rest= cart.filter(pd=> pd.id !==product.id)
+        const rest= cart.filter(pd=> pd._id !==product._id)
         setcart(rest)
-        removeFromDb(product.id)
+        removeFromDb(product._id)
     }
 
     return (
@@ -22,7 +22,7 @@ const navigate=useNavigate();
                 {
                     cart.map(product=> <RevewItems 
                         product={product} 
-                        key={product.id}
+                        key={product._id}
                         handelToDeleteCart={handelToDeleteCart}
                     
                     ></RevewItems>)
