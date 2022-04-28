@@ -8,7 +8,7 @@ useEffect(()=>{
     const storedCart=getStoredCart();
     const saveCart=[];
     const keys=Object.keys(storedCart);
-    fetch('http://localhost:5000/ProductPost',{
+    fetch('https://emajhonbro.herokuapp.com/productPost',{
         method: 'POST',
         headers:{
             'Content-Type': 'application/json'

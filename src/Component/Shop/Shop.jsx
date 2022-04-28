@@ -15,7 +15,7 @@ function Shop() {
 
     const [products,setProducts]=useState([]);
  useEffect(()=>{
-    fetch(`http://localhost:5000/product?page=${page}&size=${size}`)
+    fetch(`https://emajhonbro.herokuapp.com/product?page=${page}&size=${size}`)
     .then(res=>res.json())
     .then(data=>setProducts(data))
 
@@ -23,7 +23,7 @@ function Shop() {
 console.log(page);
      //  pagination
      useEffect( () =>{
-        fetch('http://localhost:5000/productCount')
+        fetch('https://emajhonbro.herokuapp.com/productCount')
         .then(res => res.json())
         .then(data =>{
             console.log(data)
@@ -69,7 +69,7 @@ let newCart =[];
     return (
         <div className="shopContainer">
             <div className="Products-container">
-                <h1>Ami</h1>
+            
                 <div className="Products">
                 {
                     products.map(product => 
